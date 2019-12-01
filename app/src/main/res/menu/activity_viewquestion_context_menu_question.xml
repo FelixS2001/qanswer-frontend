@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Frage ändern"
+        android:id="@+id/item_viewQuestion_changeQuestion" />
+
+
+    <item
+        android:title="Frage löschen"
+        android:id="@+id/item_viewQuestion_deleteQuestion" />
+</menu>

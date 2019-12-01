@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Von Favoriten entfernen"
+        android:id="@+id/item_favorites_activity_removeFromFavorites_own" />
+
+    <item
+        android:title="Frage löschen"
+        android:id="@+id/item_favorites_activity_delete_own" />
+</menu>

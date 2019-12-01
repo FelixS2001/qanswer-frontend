@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Actvities.Questions.NewQuestionActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="goToHomeButtonClicked"
+            android:src="@drawable/ic_home_black_24dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_add_white_24dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:onClick="addNewQuestionButtonClicked" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:onClick="showFavoriteQuestionsButtonClicked" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_person_black_24dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:onClick="showYourAccountButtonClicked" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/newQuestion_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Kategorie:"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_newQuestion_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textSize="20dp"></Spinner>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_newQuestion_question_title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_no_stroke"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Was möchtest Du wissen?"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editText_newQuestion_question_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_no_stroke"
+                    android:hint="Fragetitel eingeben"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textview_newQuestion_question_description_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_no_stroke"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Möchtest du ausführlicher beschreiben?"
+                    android:textSize="20dp" />
+
+
+                <EditText
+                    android:id="@+id/editText_newQuestion_question_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_no_stroke"
+                    android:hint="Beschreibung hinzufügen (optional)"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_newQuestion_cancel"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:onClick="cancelButtonClicked"
+                    android:text="Abbrechen" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_newQuestion_save"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:onClick="saveButtonClicked"
+                    android:text="Speichern" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

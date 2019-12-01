@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="15dp"
+        android:paddingHorizontal="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView_questionDetail_answerUserID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView_questionDetail_answerDateID"
+                    android:layout_width="0dp"
+                    android:layout_gravity="right"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView_questionDetail_answerTextID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

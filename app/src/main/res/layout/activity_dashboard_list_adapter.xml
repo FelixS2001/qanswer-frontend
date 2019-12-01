@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/arrow_up"
+                    android:layout_width="150px"
+                    android:maxWidth="150px"
+                    android:layout_height="150px"
+                    android:maxHeight="150px"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_keyboard_arrow_up_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/arrow_down"
+                    android:layout_width="150px"
+                    android:maxWidth="150px"
+                    android:layout_height="150px"
+                    android:maxHeight="150px"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textview_upvotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/text_view_circle_unanswered" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_listItem_question_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="18dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textView_listItem_question_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Questiondate" />
+
+            <TextView
+                android:id="@+id/textView_listItem_question_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textView_listItem_question_answers_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Answercount"
+                android:layout_marginBottom="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
